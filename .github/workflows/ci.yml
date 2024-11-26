@@ -21,9 +21,10 @@ jobs:
 
       - name: "clone the repository"
         uses: action/checkout@v2
-
+permission:
+    content: read
       - name: "install dependancies"
-        run: npm install
+         run: npm install
 
       - name: "list directories"
         run: ls  
