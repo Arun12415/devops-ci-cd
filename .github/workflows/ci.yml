@@ -20,4 +20,11 @@ jobs:
         run: node --version
 
       - name: "clone the repository"
-        uses: action/checkout@v2
+        uses: actions/checkout@v4
+
+      - name: "list dependencies"
+        run: ls
+
+      - name: "list directories"
+        run: ls
+
